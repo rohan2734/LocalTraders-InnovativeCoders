@@ -4,7 +4,7 @@ const router = express.Router();
 
 const investmentControllers = require('../controllers/investment-controllers');
 
-router.get("/investments",investmentControllers.getSharesInInvestments);
+router.get("/investments/:vendorID",investmentControllers.getSharesInInvestments);
 
 
 module.exports = router;
