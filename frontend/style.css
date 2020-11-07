@@ -1,6 +1,13 @@
 .row{
+    display: flex;
+    width: 100%;
     margin: auto;
     box-shadow: 0 0 2 1 rgba(0, 0, 0, 0.8);
+}
+.row::after{
+    display: block; 
+    clear: both;
+    content: "";
 }
 
 .col-1{width: 8.33%;}
@@ -16,7 +23,7 @@
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
-.frame{
+div.frame{
     background-image: url("./Frame.svg");
     background-repeat: no-repeat;
     background-size: cover;
