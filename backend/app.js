@@ -16,6 +16,15 @@ const investmentRouters = require('./routes/investor-routes');
 //registering routes as middlewares
 app.use('/api/investors',investmentRouters);
 
+//error handler
+app.use((error,req,res,next) => {
+    if(res.headerSent){
+        return next(error);
+    }
+    res.status(error.code || 500);
+    res.json({message : error.message || `Something wrong happened, error 500`});
+})
+
 mongoose
 .connect(
     `mongodb+srv://${keys.mongoDBUsername}:${keys.mongoDBPassword}@cluster0.3kcv6.mongodb.net/${keys.DBName}?retryWrites=true&w=majority`,
