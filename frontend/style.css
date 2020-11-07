@@ -24,7 +24,82 @@
 .col-12{width: 100%;}
 
 div.frame{
+    background-color: royalblue;
     background-image: url("./Frame.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.growth{
+    padding-top: 1rem;
+    padding-bottom: 0.9rem;
+    margin: 2rem 0;
+}
+
+.loginForm{
+    padding: 10px;
+    margin: 20px;
+}
+
+.Yellow{
+    color: #ffd700;
+    text-align: center;
+}
+
+p.Yellow{
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+label.Yellow{
+    font-size: 1.2em;
+}
+
+.formInputs{
+    margin: 1.5em 0;
+    display: block;
+    background-color: royalblue;
+    color: #fff;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 3px;
+    border-radius: 7px;
+    width: 80%;
+}
+
+#forgot-password{
+    color: #000;
+}
+
+.login-button{
+    background-color: #4169e1;
+    color: #fff;
+    display: block;
+    margin: 1.4em auto;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 30px;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #fff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #fff;
+  }
+
+  #SignupAnchor{
+      color: #4169e1;
+  }
+
+  .span_center{
+      text-align: center;
+      font-weight: bolder;
+  }
