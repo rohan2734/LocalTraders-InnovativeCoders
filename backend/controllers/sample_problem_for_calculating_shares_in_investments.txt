@@ -1,0 +1,96 @@
+bussiness account initially with balance = 0
+vendor starts with depositing 1000/- in bussiness account 
+bussiness account balance = 1000/-
+the investments starts at monday morning 8:00 AM and ends at sunday morning 8:00 AM
+
+WEEK 1, MONTH 1, YEAR 1 :- 
+
+he posts to fetch investments of amount 4000/-
+
+
+weekly_investor_1 invests 4000/-
+bussiness account balance = 5000/-
+
+weekly_investor_2 invests 4000/-
+bussiness account balance = 9000/-
+
+monthly_investor invests 10,000/-
+bussiness account balance = 19,000/-
+
+yearly_investor invests 1,00,000/-
+bussiness account balance = 1,19,000/-
+
+WEEK OPEN BALANCE = 1,19,000/-
+
+SHARES :-
+
+share of vendor		   = (1000/119000)   = x0 = 0.0084033613445378
+share of weekly_investor_1 = (4000/119000)   = x1 = 0.0336134453781513
+share of weekly_investor_2 = (4000/119000)   = x2 = 0.0336134453781513
+share of monthly_investor = (10,000/119000)  = x3 = 0.0840336134453782
+share of yearly_investor = (1,00,000/119000) = x4 = 0.8403361344537815
+
+WEEK 1 (END), MONTH 1, YEAR 1 :-
+
+bussiness account balance = 3,00,000/-
+
+
+raise in the value of 1 rupee is (3,00,000 / 1,19,000) = 2.521008403361345 = r1
+
+
+weekly_investor_1 gets 80% of his share value = (80/100)  *  (x1*(3,00,000)) = 8,067.226890756312
+weekly_investor_1 profit = 8,067.226890756312 - 4000 = 4,067.226890756312
+
+weekly_investor_2 gets 80% of his share value = (80/100)  *  (x2*(3,00,000)) = 8,067.226890756312
+weekly_investor_2 profit = 8,067.226890756312 - 4000 = 4,067.226890756312
+
+
+add all the remaining profits from weekly_investors = 2,016.806722689078 + 2,016.806722689078 = 4,033.613445378156 = p1
+
+p1 will be equally distributed among all the yearly_investors
+
+bussiness account balance = 2,83,865.5462184874 = b1
+
+
+NEW SHARES :-
+
+share of vendor		   = (1000*r1 / 2,83,865.5462184874)   = x0 = 0.0088809946714032    , 1000*r1 = n1
+share of monthly_investor = (10,000*r1 / 2,83,865.5462184874)  = x3 = 0.088809946714032     , 10,000*r1 = n2
+share of yearly_investor = ((1,00,000*r1)+p1 / 2,83,865.5462184874) = x4 = 0.902309058614565, (1,00,000*r1)+p1 = n3
+
+WEEK 4, MONTH 1(END), YEAR 1 :- 
+
+bussiness account balance = 2,83,865.5462184874 = b1
+
+
+raise in the value of 1 rupee is (2,83,865.5462184874 / 2,83,865.5462184874) = 1 = r1
+
+
+monthly_investor gets his share value = (x3 * 2,83,865.5462184874) = 25,210.08403361345
+monthly_investor profit = 25,210.08403361345 - 10,000 = 15,210.08403361345
+
+bussiness account balance = 2,58,655.462184874 = b1
+
+NEW SHARES :-
+
+share of vendor		   = (n1*r1 / 2,83,865.5462184874)   = x0 = 0.0088809946714032
+share of monthly_investor = (n2*r1 / 2,83,865.5462184874)  = x3 = 0.088809946714032
+share of yearly_investor = (n3*r1 / 2,83,865.5462184874) = x4 = 0.902309058614565
+
+
+WEEK 36, MONTH 12, YEAR 1(END) :- 
+
+bussiness account balance = 1,00,00,000 = b1
+
+
+raise in the value of 1 rupee is ( 1,00,00,000 / 2,83,865.5462184874) = 35.22794552989935 = r1
+
+
+yearly_investor gets his share value = x4 * 1,00,00,000 = 90,23,090.58614565
+yearly_investor profit = 90,23,090.58614565 - 1,00,000 = 89,23,090.58614565
+
+bussiness account balance = 9,76,909.41385435 = b1
+
+vendors yearly profit = 9,76,909.41385435 - 1000 = 9,75,909.41385435
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
