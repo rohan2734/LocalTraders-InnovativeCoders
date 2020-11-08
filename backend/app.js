@@ -10,11 +10,11 @@ app.use(bodyParser.json())
 const keys = require('./keys/keys');
 
 //routers
-const investmentRouters = require('./routes/investor-routes');
+const vendorsRoutes = require('./routes/vendor-routes');
 
 
 //registering routes as middlewares
-app.use('/api/investors',investmentRouters);
+app.use('/api/vendors',vendorsRoutes);
 
 //error handler
 app.use((error,req,res,next) => {
@@ -30,7 +30,8 @@ mongoose
     `mongodb+srv://${keys.mongoDBUsername}:${keys.mongoDBPassword}@cluster0.3kcv6.mongodb.net/${keys.DBName}?retryWrites=true&w=majority`,
     { 
         useNewUrlParser: true,
-        useUnifiedTopology: true
+        useUnifiedTopology: true,
+        useCreateIndex:true
     })
 .then(()=>{
     app.listen(keys.PORT,() => {
