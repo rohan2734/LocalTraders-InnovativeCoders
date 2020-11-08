@@ -1,6 +1,7 @@
 const HttpError = require('../error_handler/http-error');
 const vendorsSchema = require('../models/vendors-models/vendorsSchema');
 const VendorsSchema = require('../models/vendors-models/vendorsSchema');
+const bussinessSchema = require('../models/vendors-models/bussinessSchema');
 
 const postShareInInvestments = (req,res,next) => {
     //get Data from req.body
@@ -117,6 +118,38 @@ const vendorsLogin = async (req,res,next) => {
 
 }
 
+const postBusinessDetails = async (req,res,next) => {
+    const { 
+        bussinessName,bussinessLocation,
+        previousYearBudget,currentYearBudgetAndSales,
+        bussinessDescription,bussinessAccountBalance,
+        vendorID
+    } = req.body;
+    const bussinessImage = "https://images.unsplash.com/photo-1529088558886-c429274eba6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60";
+    const bussinessDocuments="http://www.pdf995.com/samples/pdf.pdf";
+
+    const createBusiness = new bussinessSchema({
+        bussinessName,bussinessLocation,
+        previousYearBudget,currentYearBudgetAndSales,
+        bussinessDescription,bussinessAccountBalance,
+        vendorID,bussinessImage,
+        bussinessDocuments
+    })
+
+    try{
+        await createBusiness.save();
+    }catch(err){
+        const error = new HttpError(
+            "creating business failed",500
+        );
+        return next(error);
+    }
+    res.json({businessDetails:createBusiness}).status(201);
+
+}
+
+
+exports.postBusinessDetails = postBusinessDetails;
 exports.vendorsLogin = vendorsLogin;
 exports.vendorsSignup = vendorsSignup;
 exports.postShareInInvestments = postShareInInvestments;
