@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shops</title>
+        <link rel="stylesheet" href="./shops.css">
+    </head>
+    <body>
+        <header class="shopsHeader">
+            <strong>LOGO</strong>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <form class="filteringForm" action="">
+                            <input type="text" placeholder="&#128269;   Search" onfocus="this.placeholder=''" onblur="this.placeholder='&#128269;    Search'" class="formInput">
+                            <select name="" id="" class="formInput">
+                                <option value="Search by city" hidden>Search by city</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                            </select>
+                            <input type="button" value="Search" class="filterButton">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 shops">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="./ShopImage.jpeg" alt="ShopPhoto" class="shopPhoto">
+                            </div>
+                            <div class="col-8">
+                                <em><h3 id="">Shop Name:</h3></em>
+                                <em><h3 id="">Category:</h3></em>
+                                <em><h3 id="">Location:</h3></em>
+                                <em><h3 id="">Quoted budget:</h3></em>
+                                <div class="startInvestment">
+                                    <p>
+                                        <span>Invested by </span><span id="InNO"> </span><span>Investors</span>
+                                    </p>
+                                    <button class="investButton">Start Investment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

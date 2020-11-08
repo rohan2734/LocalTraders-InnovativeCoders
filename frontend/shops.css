@@ -1,0 +1,85 @@
+.container{
+    display: block;
+    margin: 1em auto;
+}
+.row{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 2 1 rgba(0, 0, 0, 0.8);
+}
+.row::after{
+    display: block; 
+    clear: both;
+    content: "";
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+span{
+    color: #90ee90;
+}
+strong{
+    font-size: larger;
+    margin-left: 1.2rem;
+}
+header.shopsHeader{
+    background-color: #4169e1;
+    color: azure;
+    padding: 10px 5px;
+    text-shadow: 2px 3px 5px rgb(131, 165, 185);
+}
+.filteringForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-top: 10px;
+}
+.formInput{
+    border: none;
+    border-radius: 4px;
+    background-color: #c0c0c0;
+    padding: 6px 12px;
+}
+.filterButton{
+    background-color: royalblue;
+    color: seashell;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 7px;
+}
+::placeholder{
+    color: #000;
+}
+-moz::placeholder{
+    color: #000;
+}
+.shops{
+    margin-top: 20px;
+}
+.shopPhoto{
+    display: block;
+    margin: auto;
+    border-radius: 6px;
+}
+.startInvestment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.investButton{
+    background-color: #4169e1;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    padding: 0 7px;
+}
