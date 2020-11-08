@@ -11,10 +11,12 @@ const keys = require('./keys/keys');
 
 //routers
 const vendorsRoutes = require('./routes/vendor-routes');
+const investorRoutes = require('./routes/investor-routes');
 
 
 //registering routes as middlewares
 app.use('/api/vendors',vendorsRoutes);
+app.use('/api/investors',investorRoutes);
 
 //error handler
 app.use((error,req,res,next) => {
