@@ -74,7 +74,7 @@ header.shopsHeader{
 .startInvestment{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .investButton{
     background-color: #4169e1;
