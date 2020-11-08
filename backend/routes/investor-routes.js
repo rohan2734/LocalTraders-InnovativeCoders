@@ -2,9 +2,12 @@ const express = require('express');
 
 const router = express.Router();
 
-const investmentControllers = require('../controllers/investment-controllers');
+const investorsControllers = require('../controllers/investors-controllers');
 
-router.get("/investments/:vendorID",investmentControllers.getSharesInInvestments);
+//signup
+router.post("/signup",investorsControllers.investorsSignup);
+//login
+router.post("/login",investorsControllers.investorsLogin);
 
 
 module.exports = router;
