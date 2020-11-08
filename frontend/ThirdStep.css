@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+header.shopsHeader{
+    background-color: #4169e1;
+    color: azure;
+    padding: 10px 10px;
+    text-shadow: 2px 3px 5px rgb(131, 165, 185);
+}
+.shopsHeader p{
+    margin-left: 2.7em;
+}
+.line{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 25em;
+}
+.circles{
+    border-radius: 50%;
+    background-color: #416eff;
+    color: #fffff0;
+    width: 50px;
+    text-align: center;
+}
+.ThirdStep{
+    background-color: yellow;
+    border: 2px dotted rgba(0, 0, 0, 0.9);
+}
+.createdMSG{
+    line-height: 200%;
+    text-align: center;
+}
+.formButton{
+    display: block;
+    margin: auto;
+    background-color: royalblue;
+    color: #fff5ee;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
